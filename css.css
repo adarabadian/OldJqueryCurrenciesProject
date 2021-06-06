@@ -1,0 +1,401 @@
+body{
+  background-image: url("wp.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: 'Playfair Display', serif;
+}
+.page {
+  height: 90%;
+  font-size: large;
+  background-color: transparent;
+}
+.content {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffffa3;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  flex-direction: column;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #525353;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6cdafb;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+h1 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+body {
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.currenciesPictures{
+  width: 15%;
+  margin-top: 10px;
+}
+
+.innerPageClass{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.card{
+  text-align: left;
+  width: 22%;
+  padding: 1%;
+  margin: 1%;
+  color: rgb(255, 255, 255);
+  background-image: url("cardBg.jpg");
+  background-position: center;
+  background-size: 130%;
+  background-size: cover;
+  background-attachment: scroll;
+  align-self: flex-start;
+  border-radius: 0;
+}
+.title{
+  width: 40%;
+  margin: auto;
+}
+#searchArea{
+  flex-basis: 100%;
+  margin: 30px;
+}
+
+#searchInput{
+  background-color: #000000c2;
+  color: white;
+  text-align: center;
+}
+#searchButton{
+  background-color: #000000c2;
+  color: white;
+  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.bg-light{
+  background-color: transparent;
+  font-size: larger;
+  margin: 4% 15% 2% 15%;
+}
+.navbar-brand{
+  font-size: larger;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card > button{
+  background: #4547525e;
+  color: white;
+}
+
+.currenciesPictures{
+  display: inline-block;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.preloader{
+  margin: auto;
+  text-align: center;
+}
+.preloader > img{
+  width: 50%;
+}
+
+.moreInfoText{
+  display: inline-block;
+  width: 80%;
+  margin-left: 3%;
+  vertical-align: sub;
+  font-size: medium;
+}
+
+.currencyPicture{
+  width: 35%;
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.popUp{
+  width: 100%;
+  height: 100vh;
+  background-color:#00000070;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer{
+  background-color: #ffffffbd;
+  width: 60%;
+  min-height: 75%;
+}
+.modalHeader{
+  display: block;
+  width:100%;
+  height: 50px;
+  margin: 30px;
+  text-align: center;
+}
+.modalBody{
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.modalBody .card{
+  width: 30%;
+  margin: auto;
+}
+.modalFooter{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.modalFooter button {
+  margin-right: 20px;
+}
+
+.aboutPage{
+  width: 100%;
+  margin-top: 3%;
+}
+
+.aboutPage > h2{
+min-height: 180px; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 5%;
+font-size: 50px;
+font-family: cursive;
+letter-spacing: 24px;
+}
+
+#aboutMeHeader{
+  background-image: url("car.jpg");
+}
+
+#aboutCurrenciesHeader{
+  background-image: url("development.jpg");
+  background-size: cover;
+}
+
+.aboutPage > p {
+  text-align: left;
+}
+
+.aboutAlbum{
+  display: inline-flex;
+  margin: auto;
+}
+
+.aboutImages{
+  width: 32%;
+  margin:auto;
+  height: 230px;
+  object-fit: cover;
+}
+
+
+#chartContainer{
+  width: 100%;
+  height: 370px;
+}
+.canvasjs-chart-canvas{
+  position: relative;
+}
+
+canvas{
+position: relative;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1025px) {
+  .cardsDiv{
+    background-color: #ffffff73;
+  }
+  .title{
+    width: 100vw;
+  }
+  .content {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    height: inherit;
+  }
+
+  .card{
+    width: 31vw;
+  }
+  .modalContainer{
+    width: 100vw;
+    height: 75vh;
+  }
+  .modalBody .card{
+  width: 32%;
+  }
+
+  .aboutPage > h2 {
+    letter-spacing: normal;
+  }
+  .aboutPage > p {
+    margin: 2%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .card{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .cardsDiv{
+    background-color: #ffffff73;
+  }
+  .title{
+    width: 100vw;
+  }
+  .content {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    height: inherit;
+  }
+
+  .card{
+    width: 98%;
+    margin: 1%;
+    line-height: 12px;
+  }
+  .modalContainer{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+  .modalHeader{
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+  .modalBody{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+  }
+  .modalBody .card{
+    margin: 2%;
+    width: 90%;
+  }
+  .modalFooter{
+    margin-bottom : 3%;
+  }
+
+  .aboutPage > h2 {
+    letter-spacing: normal;
+  }
+  .aboutPage{
+    padding: 3%;
+  }
+  .aboutImages {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .aboutAlbum{
+    display: block;
+  }
+  #chartContainer{
+    width: 96%;
+    margin: auto;
+  }
+
+}
+
